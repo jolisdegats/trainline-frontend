@@ -47,19 +47,13 @@ const CityList = () => {
 
   //   ON CLICK ON ITEM IN THE LIST => SET STATION VALUE
   const selectStation = (name) => {
-    let action =
-      window.screen.width > 768
-        ? focusBlock === "stationsFrom"
-          ? "stationsTo"
-          : ""
-        : "";
+    let action = focusBlock === "stationsFrom" ? "stationsTo" : "";
     return (
       dispatch({
         type: "SELECT_FROMSTATION",
         payload: { key: focusBlock, value: name },
       }),
-      window.screen.width > 768 &&
-        focusBlock === "stationsFrom" &&
+      focusBlock === "stationsFrom" &&
         document.searchJourney.stationsTo.focus(),
       dispatch({
         type: "FOCUS_BLOCK",

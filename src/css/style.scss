@@ -96,5 +96,8 @@ body {
       background-color: #e7ebeb;
     }
     outline: none;
+    &:placeholder {
+      text-transform: unset;
+    }
   }
 }

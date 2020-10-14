@@ -9,7 +9,7 @@ import Modal from "./components/Modal";
 
 function App() {
   return (
-    <div className="App" name="">
+    <div className="App">
       <Modal></Modal>
       <Banner></Banner>
       <div className="mainBackgroundImage">

@@ -53,12 +53,18 @@ const CityList = () => {
         type: "SELECT_FROMSTATION",
         payload: { key: focusBlock, value: name },
       }),
-      focusBlock === "stationsFrom" &&
-        document.searchJourney.stationsTo.focus(),
-      dispatch({
-        type: "FOCUS_BLOCK",
-        payload: { value: action },
-      })
+      // Different behaviour on mobile => Do not automatically focus on StationsTo
+      window.screen.width > 768
+        ? (focusBlock === "stationsFrom" &&
+            document.searchJourney.stationsTo.focus(),
+          dispatch({
+            type: "FOCUS_BLOCK",
+            payload: { value: action },
+          }))
+        : dispatch({
+            type: "FOCUS_BLOCK",
+            payload: { value: "" },
+          })
     );
   };
 

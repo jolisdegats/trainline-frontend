@@ -277,6 +277,9 @@
         border: 1px solid #cfd4d5;
         color: #192325;
         font-weight: 600;
+        @include phone {
+          padding: 2rem;
+        }
         span {
           font-weight: 400;
           font-size: 1.3rem;

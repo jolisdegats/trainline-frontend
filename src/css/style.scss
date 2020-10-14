@@ -29,6 +29,9 @@ body {
     height: 130vh;
     width: 100%;
     z-index: 2;
+    @include phone {
+      z-index: 100;
+    }
   }
 
   h1 {

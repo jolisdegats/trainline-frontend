@@ -1,0 +1,289 @@
+@import "./media";
+
+.searchBoxPopOver {
+  padding: 3.2rem;
+  position: absolute;
+  top: 1.7rem;
+  left: 51%;
+  bottom: auto;
+  right: auto;
+  border-radius: 0.5rem;
+  width: 45%;
+  margin-top: 0px;
+  min-height: 6rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.3);
+  z-index: 100;
+
+  .mobileHeader,
+  .mobileFooter {
+    display: none;
+  }
+
+  @include phone {
+    padding: 5rem auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .mobileHeader {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600;
+      margin-bottom: 3rem;
+      p {
+        font-size: 2rem;
+      }
+      div {
+        font-size: 1.5rem;
+      }
+
+      input {
+        background-color: #f2f4f4;
+        width: 50%;
+        padding: 1.6rem;
+      }
+    }
+
+    div > button {
+      background-color: blue;
+      color: white;
+      margin-top: 5rem;
+      width: 100%;
+    }
+
+    .mobileFooter {
+      display: flex;
+    }
+  }
+
+  //  CITIES LISTINGS
+
+  .cities {
+    .popular {
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #192325;
+      margin-bottom: 1rem;
+    }
+
+    .cityList {
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+      color: #052d12;
+      font-weight: 600;
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
+      line-height: 1.3;
+      font-size: 1.5rem;
+      padding: 0 1.5rem;
+      border-radius: 0.5rem;
+
+      &:hover {
+        background-color: #f2f4f4;
+      }
+
+      p {
+        &:first-child {
+          text-transform: capitalize;
+        }
+        &:last-child {
+          text-transform: uppercase;
+        }
+      }
+    }
+    .firstElem,
+    .firstElem:hover {
+      background-color: #ece8fc;
+    }
+  }
+
+  //  DATEPICKER
+
+  .datePickerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .head {
+      display: flex;
+      width: 100%;
+      color: #666;
+      text-align: center;
+      font-size: 1.8rem;
+      align-items: center;
+      justify-content: space-between;
+      text-transform: capitalize;
+
+      .right-arrows:after,
+      .left-arrows:after,
+      .right-arrow,
+      .right-arrows,
+      .left-arrow,
+      .left-arrows {
+        cursor: pointer;
+        width: 6px;
+        height: 6px;
+        border-left: 2px solid #888;
+        border-bottom: 2px solid #888;
+      }
+
+      .left-arrow,
+      .left-arrows {
+        transform: rotate(45deg);
+      }
+      .right-arrows,
+      .right-arrow {
+        transform: rotate(225deg);
+      }
+    }
+  }
+
+  .datePickerBody {
+    .weekdaysTopBar {
+      display: flex;
+      margin-top: 1.5rem;
+    }
+    .weekday {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+      width: calc(100% / 7);
+      color: #666;
+    }
+
+    .daysTableBody {
+      display: flex;
+      flex-wrap: wrap;
+      .day-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 0;
+        cursor: pointer;
+        width: calc(100% / 7 - 0.05rem * 2);
+        font-size: 1.5rem;
+        border: solid 0.05rem #e0e0e0;
+      }
+
+      .highlight {
+        font-weight: 700;
+      }
+
+      .day-container:hover {
+        background: #ece8fc;
+        @include phone {
+          background: none;
+        }
+      }
+
+      .daySelected {
+        background-color: blue;
+        color: white;
+        &:hover {
+          background-color: blue;
+          color: white;
+        }
+      }
+      .disabled {
+        background: none;
+        cursor: none;
+        pointer-events: none;
+        color: #e0e0e0;
+      }
+    }
+  }
+
+  // TRAVELERS
+  .travelers {
+    .deleteTraveler {
+      font-weight: 600;
+      font-size: 1.5rem;
+      cursor: pointer;
+      width: 4rem;
+      text-align: center;
+    }
+
+    select {
+      background-color: #f2f4f4;
+      border: none;
+      flex: 1;
+      padding: 1rem 2rem;
+      border-radius: 0.5rem;
+      outline: none;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 1.5rem;
+    }
+
+    .ageSelect {
+      flex: 0.3;
+      margin-left: 1rem;
+    }
+
+    .ageText {
+      font-size: 1.4rem;
+      color: #192325;
+      margin: 0.5rem 0 2rem 0;
+    }
+
+    .addCardsAndMemberships {
+      padding: 0.2rem 1rem 0.5rem 1rem;
+      margin: 0.5rem 0 2rem 0;
+      font-size: 1.4rem;
+      color: #192325;
+      font-weight: 600;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      width: fit-content;
+
+      &:hover {
+        background-color: #f2f4f4;
+      }
+    }
+
+    .leftMargin {
+      margin-left: 4rem;
+    }
+
+    .addTravelerText {
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #192325;
+      margin: 3rem 0 1rem 0;
+    }
+
+    .addTravelerButtons {
+      display: flex;
+      justify-content: space-between;
+      button {
+        font-size: 1.4rem;
+        background-color: white;
+        width: 32%;
+        border: 1px solid #cfd4d5;
+        color: #192325;
+        font-weight: 600;
+        span {
+          font-weight: 400;
+          font-size: 1.3rem;
+        }
+      }
+    }
+    .traveler {
+      display: flex;
+    }
+  }
+}

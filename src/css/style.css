@@ -1,0 +1,1078 @@
+.hiddenModal {
+  display: none;
+}
+
+.modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  background-color: rgba(25, 35, 37, 0.5);
+  z-index: 110;
+}
+
+.modal .modalBlock {
+  background: white;
+  padding: 2rem 3rem;
+  border-radius: 1rem;
+  width: 30%;
+}
+
+@media (max-width: 768px) {
+  .modal .modalBlock {
+    width: 80%;
+  }
+}
+
+.modal .modalBlock div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+}
+
+.modal .modalBlock div:last-child {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.modal .modalBlock div h2 {
+  font-size: 2.2rem;
+  margin-left: 0;
+}
+
+.modal .modalBlock div .cancel {
+  background: none;
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+.modal .modalBlock div p {
+  font-size: 1.5rem;
+  width: 40%;
+}
+
+.modal .modalBlock div input,
+.modal .modalBlock div select {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 1rem 1rem;
+  border-radius: 0.5rem;
+  border: solid 1px #b2b2b2;
+}
+
+.banner {
+  background-color: #e2f6f0;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  padding: 1.6rem;
+  text-align: center;
+  background-color: #e2f6f0;
+  color: #3f4b4e;
+}
+
+header {
+  margin-right: 15rem;
+  margin-left: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+}
+
+@media (max-width: 1242px) {
+  header {
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    margin-top: 1rem;
+  }
+}
+
+header h1 {
+  cursor: pointer;
+}
+
+header h1 path {
+  fill: #ffffff;
+}
+
+@media (max-width: 768px) {
+  header h1 path {
+    fill: #00a88f;
+  }
+}
+
+header nav {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+header nav .mobileIcons {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  header nav .mobileIcons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  header nav .mobileIcons img {
+    height: 4rem;
+    margin-left: 1rem;
+  }
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  list-style: none;
+  padding: 1rem 0;
+}
+
+header nav ul li,
+header nav ul li:last-child span:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  -webkit-transition: background-color 0.1s ease-out;
+  transition: background-color 0.1s ease-out;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+  color: inherit;
+  text-decoration: none;
+  overflow: visible;
+  padding: 0.5rem 1.2rem;
+  font-size: 1.4rem;
+}
+
+header nav ul li img,
+header nav ul li:last-child span:first-child img {
+  border: solid #ffffff 1px;
+  border-radius: 5px;
+  margin-right: 1rem;
+}
+
+header nav ul li:hover,
+header nav ul li:last-child span:first-child:hover {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+header nav ul li:last-child,
+header nav ul li:last-child span:first-child:last-child {
+  padding: 0rem;
+  background-color: transparent;
+  margin-left: 0rem;
+}
+
+header nav ul li:last-child .connect,
+header nav ul li:last-child span:first-child:last-child .connect {
+  background: white;
+  padding: 0.5rem 1.2rem;
+  border-radius: 3px;
+  margin-left: 0rem;
+  color: black;
+  text-shadow: none;
+  font-weight: 500;
+}
+
+header nav ul li:last-child .connect:hover,
+header nav ul li:last-child span:first-child:last-child .connect:hover {
+  background-color: #f5f5f5;
+}
+
+@media (max-width: 768px) {
+  header nav ul {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  header nav ul li {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainContent > h2 {
+    display: none;
+  }
+}
+
+.mainContent > h2 span {
+  font-size: 4rem;
+  color: #ffffff;
+}
+
+.mainContent .subText {
+  font-family: Circular, Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #002620;
+  padding-top: 0.2856rem;
+}
+
+@media (max-width: 768px) {
+  .mainContent .subText {
+    display: none;
+  }
+}
+
+.mainContent .searchBoxes {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  max-width: 816px;
+  max-height: 550px;
+  padding-top: 1.7rem;
+  margin-bottom: 4rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mainContent .searchBoxes .searchBoxLeft,
+.mainContent .searchBoxes .searchBoxRight {
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.3);
+  background-color: #ffffff;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 48%;
+          flex: 0 0 48%;
+}
+
+@media (max-width: 768px) {
+  .mainContent .searchBoxes .searchBoxLeft,
+  .mainContent .searchBoxes .searchBoxRight {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+.mainContent .searchBoxes .searchBoxLeft form,
+.mainContent .searchBoxes .searchBoxRight form {
+  padding: 3.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 10;
+}
+
+.mainContent .searchBoxes .searchBoxLeft .inputContainer,
+.mainContent .searchBoxes .searchBoxRight .inputContainer {
+  background-color: #f2f4f4;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  position: relative;
+  border-radius: 4px;
+  margin-bottom: 3rem;
+}
+
+.mainContent .searchBoxes .searchBoxLeft .inputContainer input,
+.mainContent .searchBoxes .searchBoxRight .inputContainer input {
+  padding: 1.6rem 1.6rem 1.6rem 8.6rem;
+  width: 100%;
+}
+
+.mainContent .searchBoxes .searchBoxLeft .inputContainer .spanAndInput,
+.mainContent .searchBoxes .searchBoxRight .inputContainer .spanAndInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainContent .searchBoxes .searchBoxLeft .inputContainer .spanAndInput span,
+.mainContent .searchBoxes .searchBoxRight .inputContainer .spanAndInput span {
+  font-size: 1.4rem;
+  width: 20%;
+  position: absolute;
+  left: 2rem;
+  z-index: 3;
+}
+
+.mainContent .searchBoxes .searchBoxLeft .inputContainer .spanAndInput:hover,
+.mainContent .searchBoxes .searchBoxRight .inputContainer .spanAndInput:hover {
+  background-color: #e7ebeb;
+}
+
+.mainContent .searchBoxes .searchBoxLeft .inputContainer .clickable input,
+.mainContent .searchBoxes .searchBoxRight .inputContainer .clickable input {
+  cursor: pointer;
+}
+
+.mainContent .searchBoxes .searchBoxLeft .inputContainer .separationLine,
+.mainContent .searchBoxes .searchBoxRight .inputContainer .separationLine {
+  margin: 0 auto;
+  border-bottom: solid 1px #d1d1d1;
+  width: 90%;
+}
+
+.mainContent .searchBoxes .searchBoxLeft .noBottomMargin,
+.mainContent .searchBoxes .searchBoxRight .noBottomMargin {
+  margin-bottom: 0;
+}
+
+.mainContent .searchBoxes .searchBoxLeft button,
+.mainContent .searchBoxes .searchBoxRight button {
+  color: #ffffff;
+  background-color: #00a88f;
+}
+
+.mainContent .searchBoxes .searchBoxLeft .promotions,
+.mainContent .searchBoxes .searchBoxRight .promotions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.mainContent .searchBoxes .searchBoxLeft .promotions .addPromotion,
+.mainContent .searchBoxes .searchBoxRight .promotions .addPromotion {
+  padding: 0.5rem 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+  color: #192325;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: right;
+}
+
+.mainContent .searchBoxes .searchBoxLeft .promotions .addPromotion:hover,
+.mainContent .searchBoxes .searchBoxRight .promotions .addPromotion:hover {
+  background-color: #f2f4f4;
+}
+
+@media (max-width: 768px) {
+  .mainContent .searchBoxes .searchBoxRight {
+    display: none;
+  }
+}
+
+.mainContent .searchBoxes .searchBoxRight .rightBoxText {
+  padding: 5rem;
+}
+
+.mainContent .searchBoxes .searchBoxRight .rightBoxText > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 3rem;
+}
+
+.mainContent .searchBoxes .searchBoxRight .rightBoxText > div img {
+  margin-right: 1.5em;
+}
+
+.mainContent .searchBoxes .searchBoxRight .rightBoxText > div h3 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.mainContent .searchBoxes .searchBoxRight .rightBoxText > div p {
+  font-size: 1.3rem;
+  margin: 1rem 0 0 0;
+  line-height: 1.4;
+}
+
+.mainContent .searchBoxes .searchBoxRight .rightBoxText > div .appStoresText {
+  font-size: 1.1rem;
+  text-align: center;
+  margin: 1.5rem 0;
+  padding-top: 1.5rem;
+  border-top: solid 1px #e0e0e0;
+  font-weight: 600;
+}
+
+.mainContent .searchBoxes .searchBoxRight .rightBoxText > div .appStoresLogos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.mainContent .searchBoxes .searchBoxRight .rightBoxText > div .appStoresLogos img {
+  cursor: pointer;
+}
+
+.mainContent .searchBoxes .searchBoxRight .rightBoxText > div .appStoresLogos img:first-child {
+  margin-right: 0.5rem;
+}
+
+.mainContent .searchBoxes .searchBoxRight .rightBoxText > div .appStoresLogos img:last-child {
+  margin-left: 0.5rem;
+}
+
+.mainContent .clientsLogos {
+  background: white;
+  border-radius: 0.429rem;
+  padding: 3rem 2rem;
+  margin-bottom: -5rem;
+}
+
+.mainContent .clientsLogos p {
+  font-family: Circular, Helvetica, Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: normal;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #757575;
+  padding-bottom: 1rem;
+}
+
+.mainContent .clientsLogos ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 0 0 1rem 0;
+  padding: 0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+  .mainContent .clientsLogos ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.mainContent .clientsLogos ul li {
+  margin: 0;
+  height: 4rem;
+}
+
+@media (max-width: 768px) {
+  .mainContent .clientsLogos ul li {
+    height: 3rem;
+  }
+}
+
+.mainContent .clientsLogos ul li img {
+  height: 100%;
+  width: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 100%;
+}
+
+.mainContent .clientsLogos ul:last-child > li {
+  height: 2.5rem;
+}
+
+.searchBoxPopOver {
+  padding: 3.2rem;
+  position: absolute;
+  top: 1.7rem;
+  left: 51%;
+  bottom: auto;
+  right: auto;
+  border-radius: 0.5rem;
+  width: 45%;
+  margin-top: 0px;
+  min-height: 6rem;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+.searchBoxPopOver .mobileHeader,
+.searchBoxPopOver .mobileFooter {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .searchBoxPopOver {
+    padding: 5rem auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .searchBoxPopOver .mobileHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-weight: 600;
+    margin-bottom: 3rem;
+  }
+  .searchBoxPopOver .mobileHeader p {
+    font-size: 2rem;
+  }
+  .searchBoxPopOver .mobileHeader div {
+    font-size: 1.5rem;
+  }
+  .searchBoxPopOver .mobileHeader input {
+    background-color: #f2f4f4;
+    width: 50%;
+    padding: 1.6rem;
+  }
+  .searchBoxPopOver div > button {
+    background-color: blue;
+    color: white;
+    margin-top: 5rem;
+    width: 100%;
+  }
+  .searchBoxPopOver .mobileFooter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.searchBoxPopOver .cities .popular {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #192325;
+  margin-bottom: 1rem;
+}
+
+.searchBoxPopOver .cities .cityList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+  color: #052d12;
+  font-weight: 600;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  line-height: 1.3;
+  font-size: 1.5rem;
+  padding: 0 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.searchBoxPopOver .cities .cityList:hover {
+  background-color: #f2f4f4;
+}
+
+.searchBoxPopOver .cities .cityList p:first-child {
+  text-transform: capitalize;
+}
+
+.searchBoxPopOver .cities .cityList p:last-child {
+  text-transform: uppercase;
+}
+
+.searchBoxPopOver .cities .firstElem,
+.searchBoxPopOver .cities .firstElem:hover {
+  background-color: #ece8fc;
+}
+
+.searchBoxPopOver .datePickerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.searchBoxPopOver .datePickerContainer .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  color: #666;
+  text-align: center;
+  font-size: 1.8rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-transform: capitalize;
+}
+
+.searchBoxPopOver .datePickerContainer .head .right-arrows:after,
+.searchBoxPopOver .datePickerContainer .head .left-arrows:after,
+.searchBoxPopOver .datePickerContainer .head .right-arrow,
+.searchBoxPopOver .datePickerContainer .head .right-arrows,
+.searchBoxPopOver .datePickerContainer .head .left-arrow,
+.searchBoxPopOver .datePickerContainer .head .left-arrows {
+  cursor: pointer;
+  width: 6px;
+  height: 6px;
+  border-left: 2px solid #888;
+  border-bottom: 2px solid #888;
+}
+
+.searchBoxPopOver .datePickerContainer .head .left-arrow,
+.searchBoxPopOver .datePickerContainer .head .left-arrows {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.searchBoxPopOver .datePickerContainer .head .right-arrows,
+.searchBoxPopOver .datePickerContainer .head .right-arrow {
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+}
+
+.searchBoxPopOver .datePickerBody .weekdaysTopBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1.5rem;
+}
+
+.searchBoxPopOver .datePickerBody .weekday {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  width: calc(100% / 7);
+  color: #666;
+}
+
+.searchBoxPopOver .datePickerBody .daysTableBody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.searchBoxPopOver .datePickerBody .daysTableBody .day-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 0;
+  cursor: pointer;
+  width: calc(100% / 7 - 0.05rem * 2);
+  font-size: 1.5rem;
+  border: solid 0.05rem #e0e0e0;
+}
+
+.searchBoxPopOver .datePickerBody .daysTableBody .highlight {
+  font-weight: 700;
+}
+
+.searchBoxPopOver .datePickerBody .daysTableBody .day-container:hover {
+  background: #ece8fc;
+}
+
+@media (max-width: 768px) {
+  .searchBoxPopOver .datePickerBody .daysTableBody .day-container:hover {
+    background: none;
+  }
+}
+
+.searchBoxPopOver .datePickerBody .daysTableBody .daySelected {
+  background-color: blue;
+  color: white;
+}
+
+.searchBoxPopOver .datePickerBody .daysTableBody .daySelected:hover {
+  background-color: blue;
+  color: white;
+}
+
+.searchBoxPopOver .datePickerBody .daysTableBody .disabled {
+  background: none;
+  cursor: none;
+  pointer-events: none;
+  color: #e0e0e0;
+}
+
+.searchBoxPopOver .travelers .deleteTraveler {
+  font-weight: 600;
+  font-size: 1.5rem;
+  cursor: pointer;
+  width: 4rem;
+  text-align: center;
+}
+
+.searchBoxPopOver .travelers select {
+  background-color: #f2f4f4;
+  border: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.searchBoxPopOver .travelers .ageSelect {
+  -webkit-box-flex: 0.3;
+      -ms-flex: 0.3;
+          flex: 0.3;
+  margin-left: 1rem;
+}
+
+.searchBoxPopOver .travelers .ageText {
+  font-size: 1.4rem;
+  color: #192325;
+  margin: 0.5rem 0 2rem 0;
+}
+
+.searchBoxPopOver .travelers .addCardsAndMemberships {
+  padding: 0.2rem 1rem 0.5rem 1rem;
+  margin: 0.5rem 0 2rem 0;
+  font-size: 1.4rem;
+  color: #192325;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.searchBoxPopOver .travelers .addCardsAndMemberships:hover {
+  background-color: #f2f4f4;
+}
+
+.searchBoxPopOver .travelers .leftMargin {
+  margin-left: 4rem;
+}
+
+.searchBoxPopOver .travelers .addTravelerText {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #192325;
+  margin: 3rem 0 1rem 0;
+}
+
+.searchBoxPopOver .travelers .addTravelerButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.searchBoxPopOver .travelers .addTravelerButtons button {
+  font-size: 1.4rem;
+  background-color: white;
+  width: 32%;
+  border: 1px solid #cfd4d5;
+  color: #192325;
+  font-weight: 600;
+}
+
+.searchBoxPopOver .travelers .addTravelerButtons button span {
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+.searchBoxPopOver .travelers .traveler {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.callToAction {
+  background: #f2f4f4;
+  margin-top: 10rem;
+  padding: 5rem 0 7rem 0;
+}
+
+.callToAction .containerCTA {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  max-width: 70rem;
+}
+
+.callToAction .containerCTA img {
+  padding-right: 5rem;
+}
+
+.callToAction .containerCTA h2 {
+  text-align: left;
+  margin: 0 0 1rem 0;
+}
+
+.callToAction .containerCTA p {
+  font-size: 1.7rem;
+  line-height: 1.56;
+}
+
+.callToAction .containerCTA button {
+  background-color: #072456;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .callToAction .containerCTA {
+    margin: 10% 10% 0 10%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .callToAction .containerCTA img {
+    padding: 0;
+  }
+  .callToAction .containerCTA div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
+
+footer {
+  padding: 3rem 0;
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: #fff;
+  color: black;
+}
+
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+}
+
+.App {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  font-family: Circular, Helvetica, Arial, sans-serif;
+  color: #21314d;
+}
+
+.App h1 {
+  width: 140px;
+  height: 24px;
+  line-height: 1.5rem;
+}
+
+.App h2 {
+  font-family: Circular, Helvetica, Arial, sans-serif;
+  font-size: 3rem;
+  letter-spacing: -0.0286rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #21314d;
+}
+
+.App .mainBackgroundImage {
+  background-image: url("../img/campagne.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .App .mainBackgroundImage {
+    background: none;
+  }
+}
+
+.App .container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 82.394rem;
+}
+
+.App button {
+  font-family: Circular, Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.4;
+  letter-spacing: -0.25px;
+  border-radius: 6px;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+.App select,
+.App input {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  border-style: solid;
+  border-color: #b2b2b2;
+  background-color: transparent;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  color: #192325;
+  border-width: 0px;
+  border-radius: 0.5rem;
+  -webkit-appearance: none;
+  outline: none;
+  text-transform: capitalize;
+  outline: none;
+}
+
+.App select:focus,
+.App input:focus {
+  border-width: 0px;
+  -webkit-box-shadow: inset 0 0 0 2px #2332c4;
+          box-shadow: inset 0 0 0 2px #2332c4;
+}
+
+.App select:hover,
+.App input:hover {
+  background-color: #e7ebeb;
+}
+/*# sourceMappingURL=style.css.map */

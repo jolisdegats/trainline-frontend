@@ -1,0 +1,100 @@
+@import "./modal";
+@import "./banner";
+@import "./navbar";
+@import "./mainContent";
+@import "./searchBoxPopOver";
+@import "./callToAction";
+@import "./footer";
+
+@import "./media";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  font-family: Circular, Helvetica, Arial, sans-serif;
+  color: #21314d;
+
+  h1 {
+    width: 140px;
+    height: 24px;
+    line-height: 1.5rem;
+  }
+
+  h2 {
+    font-family: Circular, Helvetica, Arial, sans-serif;
+    font-size: 3rem;
+    letter-spacing: -0.0286rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #21314d;
+  }
+
+  .mainBackgroundImage {
+    @include phone {
+      background: none;
+    }
+    background-image: url("../img/campagne.jpg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 82.394rem;
+  }
+
+  button {
+    font-family: Circular, Helvetica, Arial, sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.4;
+    letter-spacing: -0.25px;
+    border-radius: 6px;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    outline: none;
+  }
+
+  select,
+  input {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    border-style: solid;
+    border-color: #b2b2b2;
+    background-color: transparent;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.5;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    color: #192325;
+    border-width: 0px;
+    border-radius: 0.5rem;
+    -webkit-appearance: none;
+    outline: none;
+    text-transform: capitalize;
+    &:focus {
+      border-width: 0px;
+      box-shadow: inset 0 0 0 2px #2332c4;
+    }
+    &:hover {
+      background-color: #e7ebeb;
+    }
+    outline: none;
+  }
+}

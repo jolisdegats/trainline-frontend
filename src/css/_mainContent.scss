@@ -1,0 +1,229 @@
+@import "./media";
+
+.mainContent {
+  > h2 {
+    @include phone {
+      display: none;
+    }
+    span {
+      font-size: 4rem;
+      color: #ffffff;
+    }
+  }
+
+  .subText {
+    @include phone {
+      display: none;
+    }
+    font-family: Circular, Helvetica, Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #002620;
+    padding-top: 0.2856rem;
+  }
+
+  .searchBoxes {
+    position: relative;
+    display: flex;
+    margin: auto;
+    max-width: 816px;
+    max-height: 550px;
+    padding-top: 1.7rem;
+    margin-bottom: 4rem;
+    justify-content: space-between;
+
+    .searchBoxLeft,
+    .searchBoxRight {
+      @include phone {
+        flex: 1;
+        border: none;
+        box-shadow: none;
+      }
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.3);
+      background-color: #ffffff;
+      flex: 0 0 48%;
+
+      form {
+        padding: 3.2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        box-sizing: border-box;
+        z-index: 10;
+      }
+
+      .inputContainer {
+        background-color: #f2f4f4;
+        -webkit-flex-grow: 1;
+        flex-grow: 1;
+        position: relative;
+        border-radius: 4px;
+        margin-bottom: 3rem;
+
+        input {
+          padding: 1.6rem 1.6rem 1.6rem 8.6rem;
+          width: 100%;
+        }
+
+        .spanAndInput {
+          display: flex;
+          align-items: center;
+
+          span {
+            font-size: 1.4rem;
+            width: 20%;
+            position: absolute;
+            left: 2rem;
+            z-index: 3;
+          }
+          &:hover {
+            background-color: #e7ebeb;
+          }
+        }
+
+        .clickable {
+          input {
+            cursor: pointer;
+          }
+        }
+        .separationLine {
+          // margin: 0 10px;
+          margin: 0 auto;
+          border-bottom: solid 1px #d1d1d1;
+          width: 90%;
+        }
+      }
+
+      .noBottomMargin {
+        margin-bottom: 0;
+      }
+
+      button {
+        color: #ffffff;
+        background-color: #00a88f;
+      }
+
+      .promotions {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 1rem;
+        .addPromotion {
+          padding: 0.5rem 1rem;
+          margin-bottom: 2rem;
+          font-size: 1.4rem;
+          color: #192325;
+          border-radius: 0.5rem;
+          cursor: pointer;
+          width: fit-content;
+          text-align: right;
+          &:hover {
+            background-color: #f2f4f4;
+          }
+        }
+      }
+    }
+
+    .searchBoxRight {
+      @include phone {
+        display: none;
+      }
+
+      .rightBoxText {
+        padding: 5rem;
+        > div {
+          display: flex;
+          align-items: flex-start;
+          margin-bottom: 3rem;
+          img {
+            margin-right: 1.5em;
+          }
+          h3 {
+            font-size: 1.5rem;
+            margin: 0;
+          }
+          p {
+            font-size: 1.3rem;
+            margin: 1rem 0 0 0;
+            line-height: 1.4;
+          }
+
+          .appStoresText {
+            font-size: 1.1rem;
+            text-align: center;
+            margin: 1.5rem 0;
+            padding-top: 1.5rem;
+            border-top: solid 1px #e0e0e0;
+            font-weight: 600;
+          }
+          .appStoresLogos {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+            img {
+              cursor: pointer;
+              &:first-child {
+                margin-right: 0.5rem;
+              }
+              &:last-child {
+                margin-left: 0.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .clientsLogos {
+    background: white;
+    border-radius: 0.429rem;
+    padding: 3rem 2rem;
+    margin-bottom: -5rem;
+    p {
+      font-family: Circular, Helvetica, Arial, sans-serif;
+      font-size: 2rem;
+      font-weight: normal;
+      line-height: 1.5;
+      letter-spacing: 0px;
+      text-align: center;
+      color: #757575;
+      padding-bottom: 1rem;
+    }
+
+    ul {
+      display: flex;
+      list-style: none;
+      margin: 0 0 1rem 0;
+      padding: 0;
+      justify-content: space-around;
+      @include phone {
+        flex-wrap: wrap;
+      }
+
+      li {
+        margin: 0;
+        height: 4rem;
+        @include phone {
+          height: 3rem;
+        }
+        img {
+          height: 100%;
+          width: auto;
+          object-fit: contain;
+          max-width: 100%;
+        }
+      }
+
+      &:last-child > li {
+        height: 2.5rem;
+      }
+    }
+  }
+}

@@ -1089,7 +1089,6 @@ body {
   -webkit-appearance: none;
   outline: none;
   text-transform: capitalize;
-  outline: none;
 }
 
 .App select:focus,
@@ -1104,8 +1103,23 @@ body {
   background-color: #e7ebeb;
 }
 
-.App select:placeholder,
-.App input:placeholder {
+.App select::-webkit-input-placeholder,
+.App input::-webkit-input-placeholder {
+  text-transform: unset;
+}
+
+.App select:-ms-input-placeholder,
+.App input:-ms-input-placeholder {
+  text-transform: unset;
+}
+
+.App select::-ms-input-placeholder,
+.App input::-ms-input-placeholder {
+  text-transform: unset;
+}
+
+.App select::placeholder,
+.App input::placeholder {
   text-transform: unset;
 }
 /*# sourceMappingURL=style.css.map */

@@ -23,6 +23,14 @@ body {
   font-family: Circular, Helvetica, Arial, sans-serif;
   color: #21314d;
 
+  .transparentDiv {
+    background-color: transparent;
+    position: absolute;
+    height: 130vh;
+    width: 100%;
+    z-index: 2;
+  }
+
   h1 {
     width: 140px;
     height: 24px;
@@ -71,6 +79,7 @@ body {
 
   select,
   input {
+    z-index: 2;
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     border-style: solid;
     border-color: #b2b2b2;

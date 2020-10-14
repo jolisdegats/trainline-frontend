@@ -20,9 +20,9 @@ const MainContent = () => {
       <div className="searchBoxes">
         <SearchBoxLeft></SearchBoxLeft>
         <SearchBoxRight></SearchBoxRight>
-        {state.states.focusBlock !== "" && (
+        {/* {state.states.focusBlock !== "" && (
           <SearchBoxPopOver></SearchBoxPopOver>
-        )}
+        )} */}
       </div>
       <ClientsLogo></ClientsLogo>
     </div>

@@ -135,7 +135,6 @@ function SearchBlockLeft() {
                 value={stationsFrom}
                 onChange={onChange}
                 onFocus={onFocus}
-                // onBlur={onFocusOut}
               />
             </div>
             <div className="separationLine"></div>
@@ -147,7 +146,6 @@ function SearchBlockLeft() {
                 value={stationsTo}
                 onChange={onChange}
                 onFocus={onFocus}
-                // onBlur={onFocusOut}
               />
             </div>
           </div>
@@ -160,7 +158,6 @@ function SearchBlockLeft() {
                 name="departureDate"
                 value={setDate(departureDate)}
                 onClick={onFocus}
-                // onBlur={onFocusOut}
                 readOnly
               />
             </div>
@@ -172,7 +169,6 @@ function SearchBlockLeft() {
                 placeholder="+ Ajouter retour"
                 value={setDate(arrivalDate)}
                 onClick={onFocus}
-                // onBlur={onFocusOut}
                 readOnly
               />
             </div>
@@ -185,7 +181,6 @@ function SearchBlockLeft() {
                 name="travelers"
                 value={setTravelers(travelers)}
                 onClick={onFocus}
-                // onBlur={onFocusOut}
                 readOnly
               />
             </div>

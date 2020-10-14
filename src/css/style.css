@@ -333,8 +333,9 @@ header nav ul li:last-child span:first-child:last-child .connect:hover {
       -ms-flex-positive: 1;
           flex-grow: 1;
   position: relative;
-  border-radius: 4px;
+  border-radius: 0.5rem;
   margin-bottom: 3rem;
+  z-index: 2;
 }
 
 .mainContent .searchBoxes .searchBoxLeft .inputContainer input,
@@ -351,6 +352,7 @@ header nav ul li:last-child span:first-child:last-child .connect:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 2;
 }
 
 .mainContent .searchBoxes .searchBoxLeft .inputContainer .spanAndInput span,
@@ -365,6 +367,7 @@ header nav ul li:last-child span:first-child:last-child .connect:hover {
 .mainContent .searchBoxes .searchBoxLeft .inputContainer .spanAndInput:hover,
 .mainContent .searchBoxes .searchBoxRight .inputContainer .spanAndInput:hover {
   background-color: #e7ebeb;
+  border-radius: 0.5rem;
 }
 
 .mainContent .searchBoxes .searchBoxLeft .inputContainer .clickable input,
@@ -388,6 +391,7 @@ header nav ul li:last-child span:first-child:last-child .connect:hover {
 .mainContent .searchBoxes .searchBoxRight button {
   color: #ffffff;
   background-color: #00a88f;
+  z-index: 2;
 }
 
 .mainContent .searchBoxes .searchBoxLeft .promotions,
@@ -399,6 +403,7 @@ header nav ul li:last-child span:first-child:last-child .connect:hover {
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin-top: 1rem;
+  z-index: 2;
 }
 
 .mainContent .searchBoxes .searchBoxLeft .promotions .addPromotion,
@@ -413,6 +418,7 @@ header nav ul li:last-child span:first-child:last-child .connect:hover {
   width: -moz-fit-content;
   width: fit-content;
   text-align: right;
+  z-index: 2;
 }
 
 .mainContent .searchBoxes .searchBoxLeft .promotions .addPromotion:hover,
@@ -548,12 +554,13 @@ header nav ul li:last-child span:first-child:last-child .connect:hover {
 .searchBoxPopOver {
   padding: 3.2rem;
   position: absolute;
-  top: 1.7rem;
+  top: 15.1rem;
   left: 51%;
   bottom: auto;
   right: auto;
   border-radius: 0.5rem;
-  width: 45%;
+  width: 40%;
+  max-width: 40rem;
   margin-top: 0px;
   min-height: 6rem;
   background-color: #ffffff;
@@ -993,6 +1000,14 @@ body {
   color: #21314d;
 }
 
+.App .transparentDiv {
+  background-color: transparent;
+  position: absolute;
+  height: 130vh;
+  width: 100%;
+  z-index: 2;
+}
+
 .App h1 {
   width: 140px;
   height: 24px;
@@ -1044,6 +1059,7 @@ body {
 
 .App select,
 .App input {
+  z-index: 2;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   border-style: solid;
   border-color: #b2b2b2;
@@ -1074,5 +1090,10 @@ body {
 .App select:hover,
 .App input:hover {
   background-color: #e7ebeb;
+}
+
+.App select:placeholder,
+.App input:placeholder {
+  text-transform: unset;
 }
 /*# sourceMappingURL=style.css.map */

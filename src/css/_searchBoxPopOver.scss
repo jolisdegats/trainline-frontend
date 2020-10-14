@@ -3,12 +3,13 @@
 .searchBoxPopOver {
   padding: 3.2rem;
   position: absolute;
-  top: 1.7rem;
+  top: 15.1rem;
   left: 51%;
   bottom: auto;
   right: auto;
   border-radius: 0.5rem;
-  width: 45%;
+  width: 40%;
+  max-width: 40rem;
   margin-top: 0px;
   min-height: 6rem;
   background-color: #ffffff;

@@ -7,8 +7,8 @@
 <br/>
 <h1>Trainline copycat (React)</h1>
 <br/>
-<p> Technical Frontend test I made in a week. The goal was to redo Trainline's homepage using 3 API (popular cities, popular cities from and autocomplete). For this project I created a Custom State Manegement tool (thanks to Steven Persia's twitch session here) and a date picker from scratch based on this tutorial.</p><p>
-This demo of the project is currently hosted on Netlify (frontend). Have a look at the live demo below and feel free to give me some feedback. </p>
+<p> Technical frontend test I took in a week. The goal was to redo Trainline's homepage using 3 API (popular cities, popular cities from and autocomplete). For this project I created a Custom State Manegement tool (thanks to Steven Persia's twitch session <a href="https://www.twitch.tv/videos/760303063">here</a>) and a date picker from scratch based on <a href="https://medium.com/swlh/build-a-date-picker-in-15mins-using-javascript-react-from-scratch-f6932c77db09">this tutoral</a>.</p><p>
+The demo of the project is currently hosted on Netlify (frontend). Have a look at it and feel free to give some feedback. </p>
 
 <h3>
 <a href="https://trainline-jolisdegats.netlify.app/">Live Demo</a>

@@ -580,7 +580,8 @@ header nav ul li:last-child span:first-child:last-child .connect:hover {
 
 @media (max-width: 768px) {
   .searchBoxPopOver {
-    padding: 5rem auto;
+    max-width: unset;
+    padding: 5rem 2rem;
     top: 0;
     bottom: 0;
     right: 0;

@@ -22,7 +22,8 @@
   }
 
   @include phone {
-    padding: 5rem auto;
+    max-width: unset;
+    padding: 5rem 2rem;
     top: 0;
     bottom: 0;
     right: 0;

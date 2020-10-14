@@ -102,12 +102,10 @@ function SearchBlockLeft() {
 
   // ON BLUR => HIDE RIGHT BOX (NOT ON MOBILE)
   const onFocusOut = () => {
-    return window.screen.width > 768
-      ? dispatch({
-          type: "FOCUS_BLOCK",
-          payload: { value: "" },
-        })
-      : "";
+    return dispatch({
+      type: "FOCUS_BLOCK",
+      payload: { value: "" },
+    });
   };
 
   // OPEN/CLOSE PROMOCODE MODAL

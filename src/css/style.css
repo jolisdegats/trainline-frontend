@@ -1105,21 +1105,21 @@ body {
 
 .App select::-webkit-input-placeholder,
 .App input::-webkit-input-placeholder {
-  text-transform: unset;
+  text-transform: initial !important;
 }
 
 .App select:-ms-input-placeholder,
 .App input:-ms-input-placeholder {
-  text-transform: unset;
+  text-transform: initial !important;
 }
 
 .App select::-ms-input-placeholder,
 .App input::-ms-input-placeholder {
-  text-transform: unset;
+  text-transform: initial !important;
 }
 
 .App select::placeholder,
 .App input::placeholder {
-  text-transform: unset;
+  text-transform: initial !important;
 }
 /*# sourceMappingURL=style.css.map */

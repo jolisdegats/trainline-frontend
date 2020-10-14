@@ -109,7 +109,7 @@ body {
     }
 
     &::placeholder {
-      text-transform: unset;
+      text-transform: initial !important;
     }
   }
 }

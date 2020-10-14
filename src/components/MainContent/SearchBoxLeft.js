@@ -117,9 +117,10 @@ function SearchBlockLeft() {
   };
 
   // SUBMIT FUNCTION
-  const searchForTravel = (event) => {
-    event.preventDefault();
-    console.log(stationsFrom);
+  const searchForTravel = (e) => {
+    e.preventDefault();
+    window.location.href =
+      "https://thumbs.gfycat.com/UniqueFluffyChafer-small.gif";
   };
 
   return (

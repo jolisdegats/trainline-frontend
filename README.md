@@ -7,7 +7,7 @@
 <br/>
 <h1>Trainline copycat (React)</h1>
 <br/>
-<p> Technical frontend test I took in a week. The goal was to redo Trainline's homepage using 3 API (popular cities, popular cities from and autocomplete). For this project I created a Custom State Manegement tool (thanks to Steven Persia's twitch session <a href="https://www.twitch.tv/videos/775074385?collection=koQosYRWPxY1FQ">here</a>) and a date picker from scratch based on <a href="https://medium.com/swlh/build-a-date-picker-in-15mins-using-javascript-react-from-scratch-f6932c77db09">this tutorial</a>.</p><p>
+<p> Technical frontend test I took in a week. The goal was to redo Trainline's homepage using 3 API (popular cities, popular cities from and autocomplete). For this project I created a Custom State Management tool and a date picker from scratch based on <a href="https://medium.com/swlh/build-a-date-picker-in-15mins-using-javascript-react-from-scratch-f6932c77db09">this tutorial</a>.</p><p>
 The demo of the project is currently hosted on Netlify (frontend). Have a look at it and feel free to give some feedback. </p>
 
 <h3>
@@ -17,11 +17,9 @@ The demo of the project is currently hosted on Netlify (frontend). Have a look a
     <br/>
 <h2>Stack</h2>
 
-<p>Made with the following stack:<br/>
-Frontend : React, axios, SASS</p>
+<p>Made with:<br/>
+React, axios, SASS</p>
  <br/>
-
-</p><h3>COMING SOON...</h3>
 
 <br/>
 <h2>Contact</h2>
